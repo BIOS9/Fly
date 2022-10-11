@@ -9,18 +9,18 @@ using OpenMod.API.Plugins;
 // For more, visit https://openmod.github.io/openmod-docs/devdoc/guides/getting-started.html
 
 [assembly: PluginMetadata("BIOS9.Fly", DisplayName = "Fly")]
-namespace MyOpenModPlugin
+namespace BIOS9.Fly
 {
-    public class MyOpenModPlugin : OpenModUnturnedPlugin
+    public class Fly : OpenModUnturnedPlugin
     {
         private readonly IConfiguration m_Configuration;
         private readonly IStringLocalizer m_StringLocalizer;
-        private readonly ILogger<MyOpenModPlugin> m_Logger;
+        private readonly ILogger<Fly> m_Logger;
 
-        public MyOpenModPlugin(
+        public Fly(
             IConfiguration configuration,
             IStringLocalizer stringLocalizer,
-            ILogger<MyOpenModPlugin> logger,
+            ILogger<Fly> logger,
             IServiceProvider serviceProvider) : base(serviceProvider)
         {
             m_Configuration = configuration;
